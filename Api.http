@@ -1,0 +1,46 @@
+#rest api example new
+###
+GET http://localhost:3000/api/products HTTP/1.1
+Content-Type: application/json
+
+###
+GET http://localhost:3000/api/products/5fb34b054af60d9abd905253 HTTP/1.1
+Content-Type: application/json
+
+###
+POST http://localhost:3000/api/products HTTP/1.1
+Content-Type: application/json
+    
+{
+    "name": "Pc Gamer",
+    "price": 1200,
+    "category": "Tecnologi",
+    "image": "https://hardzone.es/app/uploads-hardzone.es/2020/01/Gaming-PC-01.jpg",
+     "name": "Celular",
+    "price": 600,
+    "category": "Tecnologi",
+    "image": "https://exitocol.vtexassets.com/arquivos/ids/4953611-800-auto?width=800&height=auto&aspect=true",   
+     "name": "Audifonos",
+    "price": 345,
+    "category": "Tecnologi",
+    "image": "https://i.pinimg.com/originals/30/da/3e/30da3e19565fac60bc5fa3c004ef1ca5.jpg"  
+    
+}
+    
+
+   
+
+###
+PUT http://localhost:3000/api/products/5fc5b05e5416ca2776f59074 HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Pc Gamer",
+    "price": 1200,
+    "category": "Tecno",
+    "image": "https://hardzone.es/app/uploads-hardzone.es/2020/01/Gaming-PC-01.jpg"
+}
+
+###
+DELETE http://localhost:3000/api/products/5fc5b7b424bbbb2b32e1aa00 HTTP/1.1
+Content-Type: application/json
